@@ -1,14 +1,15 @@
 package core.hw;
 
-import lombok.AllArgsConstructor;
 
-@AllArgsConstructor
-public class Rectangle {
+public class Rectangle extends Figure {
 
-    private final int dlinna;
-    private final int shirina;
+
+    public Rectangle(double a, double b, double c) {
+        super(a, b, c);
+    }
 
     public void areaOfRectangle(){
-        System.out.println("Площать прямоугольника равна: " + dlinna * shirina + " cm");
+        System.out.println("Площадь прямоугольника равна: " + a * b + " cm");
     }
+
 }

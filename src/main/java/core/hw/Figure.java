@@ -1,14 +1,15 @@
 package core.hw;
 
-public class Figure {
-    public static void main(String[] args) {
-        Square kvadrat = new Square(5);
-        Triangle treugolnik = new Triangle(3,4,5);
-        Rectangle pryamougolnik = new Rectangle(4, 6);
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+public abstract class Figure {
+
+    public double a;
+    public double b;
+    public double c;
 
 
-        kvadrat.areaOfSquare();
-        treugolnik.areaOfTriange();
-        pryamougolnik.areaOfRectangle();
-    }
+
+
 }

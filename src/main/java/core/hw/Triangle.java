@@ -1,20 +1,16 @@
 package core.hw;
 
-import lombok.AllArgsConstructor;
+    public class Triangle extends Figure {
+        public Triangle(double a, double b, double c) {
+            super(a, b, c);
+        }
 
-@AllArgsConstructor
-public class Triangle {
+        public void areaOfTriange(){
+           double p;
+           p = (a + b + c)/2;
+           double s;
+           s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
 
-    private final double storona1;
-    private final double storona2;
-    private final double storona3;
-
-    public void areaOfTriange(){
-        double p;
-        p = (storona1 + storona2 + storona3)/2;
-        double s;
-        s = Math.sqrt(p * (p - storona1) * (p - storona2) * (p - storona3));
-
-        System.out.println("Площадь треугольника равна: " + s + " cm");
-    }
+           System.out.println("Площадь треугольника равна: " + s + " cm");
+       }
 }
