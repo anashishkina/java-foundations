@@ -1,9 +1,13 @@
 package core.hw;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
     public class Triangle extends Figure {
-        public Triangle(double a, double b, double c) {
-            super(a, b, c);
-        }
+
+        public double a;
+        public double b;
+        public double c;
 
         public void areaOfTriange(){
            double p;

@@ -1,10 +1,11 @@
 package core.hw;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Square extends Figure{
 
-    public Square(double a, double b, double c) {
-        super(a, b, c);
-    }
+    public double a;
 
     public void areaOfSquare(){
         System.out.println("Площадь квадрата равна: " + a * a + " cm");

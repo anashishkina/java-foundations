@@ -13,5 +13,6 @@ public class Flat {
         anton.printAge();
         anna.printAge();
 
+
     }
 }
