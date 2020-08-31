@@ -10,17 +10,29 @@ public class Watch implements Comparable<Watch> {
     private final boolean isElectronic;
     private double price;
 
+
     @Override
     public int compareTo(Watch watch) {
-        if (price > watch.price){
+//        if (price > watch.price){
+//            return 1;
+//        }
+//
+//        if (price < watch.price){
+//            return -1;
+//        }
+//
+//        return 0;
+
+//        return (int) (price - watch.price);
+
+        if (isElectronic && !watch.isElectronic){
+            return -1;
+        }
+        if (!isElectronic && watch.isElectronic){
             return 1;
         }
 
-        if (price < watch.price){
-            return -1;
-        }
-    return 0;
-
+        return Double.compare(price, watch.price);
     }
 
     @Override

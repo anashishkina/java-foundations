@@ -9,5 +9,8 @@ public class Flat {
 
         Person elena = new Person("Elena", 18, 175);
         System.out.println("elena.toString() = " + elena.toString());
+
+        Person nikita = new Person("Nikita", 40, 170);
+        System.out.println("nikita.toString() = " + nikita.toString());
     }
 }
