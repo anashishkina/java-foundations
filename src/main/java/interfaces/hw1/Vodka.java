@@ -29,19 +29,4 @@ public class Vodka {
         this.amountOfBottles = amountOfBottles;
     }
 
-    public void drinkTooMuch(double volumeOfBottle){
-
-    }
-
-    public void drinkTooMuch(double volumeOfBottle, String brand){
-
-    }
-
-    public void drinkTooMuch(double volumeOfBottle, String brand, String land){
-
-    }
-
-    public void drinkTooMuch(double volumeOfBottle, String brand, String land, int amountOfBottles){
-
-    }
 }
