@@ -2,13 +2,17 @@ package interfaces.compare.hw2;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @AllArgsConstructor
 @Data
+@Getter
+@Setter
 public class Person implements Comparable<Person> {
 
     private final String name;
-    private final String surname;
+    private String surname;
     private int age;
 
 
